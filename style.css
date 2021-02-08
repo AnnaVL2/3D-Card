@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Comfortaa", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 800px;
+}
+.container {
+    /* background: lightgreen; */
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    width: 35rem;
+    border-radius: 10px;
+    padding: 0rem 2.3rem;
+    background: linear-gradient(
+        to bottom,
+        rgba(270,270,66,0.1),
+        rgba(0,0,0,0.1)
+    );
+    /* box-shadow: X Y Spread rgba(0,0,0 {color composition}, 0.2{opacity}); */
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0 0px 50px rgba(0,0,0,0.2);
+}
+
+.portrait{
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+.portrait img{
+    width: 15rem;
+    z-index: 3;
+    transition: all 1.5s ease-out;
+}
+.frame{
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+    
+}
+.frame img{
+    width: 15rem;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+}
+
+.bckgr{
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+}
+.bckgr img{
+    width: 15rem;
+    z-index: 2;
+    border-radius: 5px;
+}
+
+.info h1{
+    font-size: 2.3rem;
+    transition: all 0.75s ease-out;
+}
+.info h2{
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+.info h3{
+    font-size: 1.2rem;
+    padding: 2rem 0rem;
+    color: #585858;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+}
+
+.formats{
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.75s ease-out;
+}
+.formats button{
+    padding: 0.5rem 0.6rem;
+    background: none;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #585858;
+}
+
+button.active{
+    background: #989898;
+    color:  white;
+    font-weight: normal;
+}
+
+.purchase{
+    margin-bottom: 2rem;
+    transition: all 1s ease-out;
+}
+.purchase button{
+    width:100%;
+    padding: 1rem 2rem;
+    background: tomato;
+    border: none;
+    color: white;
+    font-weight: normal;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 2rem;
+    transition: all 1s ease-out;
+}
